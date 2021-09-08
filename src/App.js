@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import data from "./data.json";
+import PlanetDetails from "./PlanetDetails";
+
+import TabWrapper from "./TabWrapper";
+import "./App.css";
+import arrow from "./svg/icon-source.svg";
+import Header from "./Header";
+
+const App = () => {
+	const [planet, setPlanet] = useState(data[2]);
+
+	const [activeIndex, setActiveIndex] = useState(0);
+
+	const handlePlanetChange = (index) => {
+		setPlanet(data[index]);
+	};
+
+	//this way of extraction  from data.json seems shitty to me, couldnt come up with something cleaner
+	const planetImage = Object.values(planet.images)[activeIndex];
+
+	const shit = Object.keys(planet.images)[activeIndex];
+
+	const [infoText, link] = Object.values(planet[shit]);
+
+	//not sure if this is even a sideeffect.i guess its not so i could just put it in the handlePlanetChange function?
+	//this resets active tab when you change planet in the navbar
+	useEffect(() => {
+		setActiveIndex(0);
+	}, [planet]);
+
+	return (
+		<div>
+			<Header changePlanet={handlePlanetChange} data={data} />
+			<h1 style={{color:"white"}}>{planet.name}</h1>
+			<img style={{ width: "400px" }} src={planetImage} alt="" />
+
+			<p>{infoText}</p>
+			<a href={link}>Source:Wikipedia </a>
+			<img style={{ height: "100px", width: "100px" }} src={arrow} alt="" />
+			<TabWrapper
+				planetName={planet.name}
+				activeId={activeIndex}
+				setActiveIndex={setActiveIndex}
+			/>
+
+			<PlanetDetails stats={planet} />
+		</div>
+	);
+};
 
 export default App;

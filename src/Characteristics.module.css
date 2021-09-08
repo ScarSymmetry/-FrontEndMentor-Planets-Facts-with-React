@@ -1,0 +1,14 @@
+.frame {
+	padding: 2em;
+	background: transparent;
+	border: 2px solid grey;
+	color: var(--color-white);
+}
+
+.title {
+	text-transform: uppercase;
+}
+
+.data {
+	text-transform: uppercase;
+}

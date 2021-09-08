@@ -1,0 +1,36 @@
+.box {
+	color: var(--color-white);
+	margin: 5px;
+	width: 200px;
+	height: 60px;
+
+	cursor: pointer;
+	border: 1px solid var(--color-light-grey);
+	background: transparent;
+	text-transform: uppercase;
+}
+
+.mercury {
+	background-color: var(--color-mercury);
+}
+.venus {
+	background-color: var(--color-venus);
+}
+.earth {
+	background-color: var(--color-earth);
+}
+.mars {
+	background-color: var(--color-mars);
+}
+.jupiter {
+	background-color: var(--color-jupiter);
+}
+.saturn {
+	background-color: var(--color-saturn);
+}
+.uranus {
+	background-color: var(--color-uranus);
+}
+.neptune {
+	background-color: var(--color-neptune);
+}

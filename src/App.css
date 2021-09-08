@@ -1,38 +1,32 @@
-.App {
-  text-align: center;
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+:root {
+	--color-white: #ffffff;
+	--color-black: hsl(240, 67%, 8%);
+	--color-dark-grey: hsl(240, 17%, 26%);
+	--color-light-grey: hsl(240, 6%, 54%);
+	--color-mercury: hsl(194, 48%, 49%);
+	--color-venus: hsl(33, 82%, 61%);
+	--color-earth: hsl(263, 67%, 51%);
+	--color-mars: hsl(10, 63%, 51%);
+	--color-jupiter: hsl(2, 68%, 53%);
+	--color-saturn: rgb(203, 80, 32);
+	--color-uranus: hsl(169, 73%, 44%);
+	--color-neptune: hsl(222, 87%, 56%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+	background-color: var(--color-black);
+	background-image: url(./svg/background-stars.svg);
+	background-position: center;
+	background-repeat: no-repeat;
 }

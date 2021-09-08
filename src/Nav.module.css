@@ -1,0 +1,68 @@
+.nav {
+	display: flex;
+	max-width: 100%;
+	justify-content: space-around;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.nav li {
+	position: relative;
+	cursor: pointer;
+	color: var(--color-light-grey);
+	list-style-type: none;
+	padding: 15px;
+}
+
+.nav li:hover {
+	color: var(--color-white);
+}
+
+.nav li::after {
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	left: 0;
+	top: 0;
+	transform: scaleX(0);
+	transition: transform 0.2s ease-in-out;
+}
+
+.nav li:hover::after {
+	transform: scaleX(1);
+}
+
+.nav .active::after {
+	transform: scaleX(1);
+}
+.nav .active {
+	color: var(--color-white);
+}
+
+.mercury::after {
+	background-color: var(--color-mercury);
+}
+
+.venus::after {
+	background-color: var(--color-venus);
+}
+.earth::after {
+	background-color: var(--color-earth);
+}
+
+.mars::after {
+	background-color: var(--color-mars);
+}
+.jupiter::after {
+	background-color: var(--color-jupiter);
+}
+.saturn::after {
+	background-color: var(--color-saturn);
+}
+.uranus::after {
+	background-color: var(--color-uranus);
+}
+.neptune::after {
+	background-color: var(--color-neptune);
+}
