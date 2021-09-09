@@ -1,9 +1,9 @@
 .nav {
 	display: flex;
 	max-width: 100%;
-	justify-content: space-around;
-	align-items: center;
+
 	text-transform: uppercase;
+	
 }
 
 .nav li {
@@ -11,7 +11,8 @@
 	cursor: pointer;
 	color: var(--color-light-grey);
 	list-style-type: none;
-	padding: 15px;
+	padding: 10px;
+	border: 1px solid greenyellow;
 }
 
 .nav li:hover {
@@ -24,7 +25,7 @@
 	height: 3px;
 	width: 100%;
 	left: 0;
-	top: 0;
+	top: -15px;
 	transform: scaleX(0);
 	transition: transform 0.2s ease-in-out;
 }

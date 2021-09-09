@@ -1,11 +1,15 @@
 import Nav from "./Nav";
-
-const Header = ({ data, changePlanet,activePlanet}) => {
+import styles from "./Header.module.css"
+const Header = ({ data, changePlanet, activePlanet }) => {
 	return (
-		<>
-			
-			<Nav changePlanet={changePlanet} data={data} activePlanet={activePlanet}/>;
-		</>
+		<div className={styles.navbar}>
+			<h1 className={styles.navbar__title}>The Planets</h1>
+			<Nav
+				changePlanet={changePlanet}
+				data={data}
+				activePlanet={activePlanet}
+			/>
+		</div>
 	);
 };
 

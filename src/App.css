@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;700&family=Spartan:wght@400;500;700&display=swap");
+
 *,
 *::before,
 *::after {
@@ -5,9 +9,6 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
-
-
 
 :root {
 	--color-white: #ffffff;
@@ -22,9 +23,13 @@
 	--color-saturn: rgb(203, 80, 32);
 	--color-uranus: hsl(169, 73%, 44%);
 	--color-neptune: hsl(222, 87%, 56%);
+
+	--font-spartan: "Spartan", sans-serif;
+	--font-antonio: "Antonio", sans-serif;
 }
 
 body {
+	font-family: var(--font-spartan);
 	background-color: var(--color-black);
 	background-image: url(./svg/background-stars.svg);
 	background-position: center;
