@@ -1,7 +1,12 @@
 import Nav from "./Nav";
 
-const Header = ({ data, changePlanet }) => {
-	return <Nav changePlanet={changePlanet} data={data} />;
+const Header = ({ data, changePlanet,activePlanet}) => {
+	return (
+		<>
+			
+			<Nav changePlanet={changePlanet} data={data} activePlanet={activePlanet}/>;
+		</>
+	);
 };
 
 export default Header;

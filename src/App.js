@@ -17,6 +17,8 @@ const App = () => {
 		setPlanet(data[index]);
 	};
 
+	
+
 	//this way of extraction  from data.json seems shitty to me, couldnt come up with something cleaner
 	const planetImage = Object.values(planet.images)[activeIndex];
 
@@ -30,9 +32,11 @@ const App = () => {
 		setActiveIndex(0);
 	}, [planet]);
 
+	
+
 	return (
 		<div>
-			<Header changePlanet={handlePlanetChange} data={data} />
+			<Header changePlanet={handlePlanetChange} data={data} activePlanet={planet.name} />
 			<h1 style={{color:"white"}}>{planet.name}</h1>
 			<img style={{ width: "400px" }} src={planetImage} alt="" />
 
