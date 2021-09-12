@@ -1,14 +1,18 @@
 .frame {
-	padding: 2em;
 	background: transparent;
-	border: 2px solid grey;
+	border: 1px solid grey;
 	color: var(--color-white);
+	min-width: 250px;
+	padding: 1em;
 }
 
 .title {
 	text-transform: uppercase;
+	color: var(--color-light-grey);
+	padding: 0.5rem;
 }
 
 .data {
 	text-transform: uppercase;
+	padding: 0.5em;
 }

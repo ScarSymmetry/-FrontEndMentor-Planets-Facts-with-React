@@ -34,4 +34,14 @@ body {
 	background-image: url(./svg/background-stars.svg);
 	background-position: center;
 	background-repeat: no-repeat;
+	min-height: 100vh;
+}
+
+.wrapper {
+	max-width: 85vw;
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	margin: 0 auto;
+	padding: 0;
+	border: 1px solid yellowgreen;
 }

@@ -6,7 +6,7 @@ const PlanetsButton = ({ data, onTabClick, backgroundColor }) => {
 	return (
 		<div>
 			<button
-				className={`${styles[backgroundColor.toLowerCase()]} ${styles.box}`}
+				className={`${styles[backgroundColor.toLowerCase()]} ${styles.button}`}
 				onClick={() => onTabClick(data.id)}
 			>
 				{isTabletOrMobile ? data.mobile : data.text}
