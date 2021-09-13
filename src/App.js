@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import data from "./data.json";
 import PlanetDetails from "./PlanetDetails";
 
-import TabWrapper from "./TabWrapper";
 import "./App.css";
 import arrow from "./svg/icon-source.svg";
 import Header from "./Header";
@@ -25,7 +24,7 @@ const App = () => {
 
 	const [infoText, link] = Object.values(planet[shit]);
 
-	//not sure if this is even a sideeffect.i guess its not so i could just put it in the handlePlanetChange function?
+	//not sure if this is even a sideeffect.i guess its not ,so i could just put it in the handlePlanetChange function?
 	//this resets active tab when you change planet in the navbar
 	useEffect(() => {
 		setActiveIndex(0);
@@ -44,15 +43,13 @@ const App = () => {
 				<img style={{ width: "400px" }} src={planetImage} alt="" />
 				<p>{infoText}</p>
 				<a href={link}>Source:Wikipedia </a> */}
-				<img src={planetImage} alt="image of the planet" />
+
 				<Main
 					planetTitle={planet.name}
 					planetDescription={infoText}
 					wikiLink={link}
 					arrow={arrow}
 					planetImage={planetImage}
-				/>
-				<TabWrapper
 					planetName={planet.name}
 					activeId={activeIndex}
 					setActiveIndex={setActiveIndex}
