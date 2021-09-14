@@ -23,6 +23,7 @@
 
 .planet__title {
 	font-family: var(--font-antonio);
+
 	font-size: 5rem;
 	text-transform: uppercase;
 	margin-block-start: 0;
@@ -30,7 +31,7 @@
 }
 
 .planet__description {
-	padding-block: 2em;
+	padding-block: 2.5rem 1rem;
 	line-height: 1.7;
 	min-height: 230px;
 }
@@ -41,9 +42,6 @@
 
 .image_container {
 	grid-column: 1 / 5;
-}
-
-.image_container {
 	grid-row: 1 / 3;
 	max-width: 100%;
 }
@@ -83,6 +81,51 @@
 
 	align-self: end;
 	justify-self: center;
+}
+
+@media only screen and (max-width: 1280px) {
+	.planet {
+		padding-top: 5rem;
+	}
+
+	.text_container {
+		grid-column: 1 / 4;
+		grid-row: 2 / 3;
+		align-self: start;
+		justify-self: start;
+		min-width: 300px;
+	}
+
+	.tab_container {
+		grid-column: 4 / -1;
+		grid-row: 2 / 3;
+		align-self: center;
+		justify-self: end;
+		min-width: 300px;
+	}
+	.image_container {
+		grid-column: 1 / -1;
+		grid-row: 1 / 2;
+		min-height: 400px;
+	}
+	.image_container_secondary {
+		grid-column: 1 / -1;
+		grid-row: 1 / 2;
+		min-height: 400px;
+	}
+
+	.planet__image {
+		max-width: 400px;
+		height: auto;
+	}
+	.image__primary {
+		max-width: 400px;
+		height: auto;
+	}
+	.image__secondary {
+		max-width: 150px;
+		height: auto;
+	}
 }
 
 a {
