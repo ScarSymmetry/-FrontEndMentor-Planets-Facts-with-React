@@ -8,6 +8,14 @@
 	border: 1px solid var(--color-light-grey);
 	background: transparent;
 	text-transform: uppercase;
+
+	letter-spacing: 2px;
+}
+
+.container {
+	display: flex;
+
+	padding-left: 2em;
 }
 
 .mercury {

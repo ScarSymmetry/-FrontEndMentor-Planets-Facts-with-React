@@ -9,7 +9,8 @@ import Header from "./Header";
 import Main from "./componenets/Main/Main";
 
 const App = () => {
-	const [planet, setPlanet] = useState(data[2]);
+	const initialData = data && data[2];
+	const [planet, setPlanet] = useState(initialData);
 
 	const [activeIndex, setActiveIndex] = useState(0);
 
@@ -17,8 +18,7 @@ const App = () => {
 		setPlanet(data[index]);
 	};
 
-	//this way of extraction  from data.json seems shitty to me, couldnt come up with something cleaner
-	// const planetImage = Object.values(planet.images)[activeIndex];
+	
 
 	const shit = Object.keys(planet.images)[activeIndex];
 

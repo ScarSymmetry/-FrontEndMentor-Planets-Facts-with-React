@@ -3,16 +3,17 @@
 	max-width: 100%;
 
 	text-transform: uppercase;
-	
 }
 
 .nav li {
+	font-weight: 500;
+	font-size: 12px;
+	margin-inline: 5px;
 	position: relative;
 	cursor: pointer;
 	color: var(--color-light-grey);
 	list-style-type: none;
 	padding: 10px;
-	border: 1px solid greenyellow;
 }
 
 .nav li:hover {

@@ -1,5 +1,8 @@
 .body {
+	max-width: 100%;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-    grid-column: 1 / -1;
+	margin-top: 5px;
+    
 }

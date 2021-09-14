@@ -4,14 +4,18 @@ import styles from "./PlanetsButton.module.css";
 const PlanetsButton = ({ data, onTabClick, backgroundColor }) => {
 	const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 	return (
-		<div>
+		<>
 			<button
 				className={`${styles[backgroundColor.toLowerCase()]} ${styles.button}`}
 				onClick={() => onTabClick(data.id)}
 			>
-				{isTabletOrMobile ? data.mobile : data.text}
+				{isTabletOrMobile ? (
+					<span className={styles.container}>{data.mobile} </span>
+				) : (
+					<span className={styles.container}>{data.text} </span>
+				)}
 			</button>
-		</div>
+		</>
 	);
 };
 
