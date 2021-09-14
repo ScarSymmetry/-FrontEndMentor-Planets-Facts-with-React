@@ -16,15 +16,3 @@ const PlanetsButton = ({ data, onTabClick, backgroundColor }) => {
 };
 
 export default PlanetsButton;
-
-// <div
-// 	onClick={() => onTabClick(data.id)}
-// className={`${Background[backgroundColor.toLowerCase()]} ${
-// 	Background.box
-// }`}
-// >
-// 	{/* <MediaQuery maxWidth={500}>{data.mobile}</MediaQuery>
-// 	<MediaQuery minWidth={502}>{data.text}</MediaQuery> */}
-
-// 	{isTabletOrMobile ? data.mobile : data.text}
-// </div>;

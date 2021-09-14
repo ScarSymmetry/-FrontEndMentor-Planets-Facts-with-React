@@ -19,7 +19,6 @@ const App = () => {
 
 	//this way of extraction  from data.json seems shitty to me, couldnt come up with something cleaner
 	// const planetImage = Object.values(planet.images)[activeIndex];
-	
 
 	const shit = Object.keys(planet.images)[activeIndex];
 
@@ -40,11 +39,6 @@ const App = () => {
 			/>
 
 			<section className="wrapper">
-				{/* <h1 style={{ color: "white" }}>{planet.name}</h1>
-				<img style={{ width: "400px" }} src={planetImage} alt="" />
-				<p>{infoText}</p>
-				<a href={link}>Source:Wikipedia </a> */}
-
 				<Main
 					planetTitle={planet.name}
 					planetDescription={infoText}

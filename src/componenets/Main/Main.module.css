@@ -1,7 +1,7 @@
 .planet {
 	color: var(--color-white);
 	display: grid;
-	gap: 10px;
+
 	align-items: center;
 	justify-items: center;
 	grid-template-columns: repeat(6, 1fr);
@@ -13,6 +13,7 @@
 .text_container {
 	grid-column: 5 / -1;
 	align-self: end;
+	padding-top: 1em;
 }
 
 .tab_container {
@@ -33,11 +34,11 @@
 .planet__description {
 	padding-block: 2em;
 	line-height: 1.7;
+	min-height: 230px;
 }
 
 .planet__source {
 	color: var(--color-light-grey);
-	padding-bottom: 1em;
 }
 
 .image_container {
