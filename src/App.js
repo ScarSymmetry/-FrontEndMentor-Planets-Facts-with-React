@@ -18,7 +18,8 @@ const App = () => {
 	};
 
 	//this way of extraction  from data.json seems shitty to me, couldnt come up with something cleaner
-	const planetImage = Object.values(planet.images)[activeIndex];
+	// const planetImage = Object.values(planet.images)[activeIndex];
+	
 
 	const shit = Object.keys(planet.images)[activeIndex];
 
@@ -49,7 +50,7 @@ const App = () => {
 					planetDescription={infoText}
 					wikiLink={link}
 					arrow={arrow}
-					planetImage={planetImage}
+					planetImage={planet.images}
 					planetName={planet.name}
 					activeId={activeIndex}
 					setActiveIndex={setActiveIndex}

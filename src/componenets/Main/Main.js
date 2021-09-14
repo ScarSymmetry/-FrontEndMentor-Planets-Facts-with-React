@@ -11,11 +11,24 @@ const Main = ({
 	activeId,
 	setActiveIndex,
 }) => {
+	const fag = (id = activeId) => {
+		return Object.values(planetImage)[id];
+	};
 	return (
 		<main className={styles.planet}>
 			<div className={styles.image_container}>
-				<img className={styles.planet__image} src={planetImage} alt="planet" />
+				{activeId !== 2 && (
+					<img className={styles.planet__image} src={fag()} alt="planet" />
+				)}
 			</div>
+
+			{activeId === 2 && (
+				<div className={styles.image_container_secondary}>
+					<img className={styles.image__primary} src={fag(0)} alt="planet" />
+
+					<img className={styles.image__secondary} src={fag(2)} alt="planet" />
+				</div>
+			)}
 			<div className={styles.text_container}>
 				<h2 className={styles.planet__title}>{planetTitle}</h2>
 				<p className={styles.planet__description}>{planetDescription}</p>
@@ -27,6 +40,7 @@ const Main = ({
 					<img src={arrow} alt="wikipedia link" />
 				</p>
 			</div>
+
 			<div className={styles.tab_container}>
 				<TabWrapper
 					planetName={planetName}

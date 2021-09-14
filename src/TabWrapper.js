@@ -3,6 +3,7 @@ import { tabsData } from "./tabsData";
 import styles from "./TabWrapper.module.css"
 
 const TabWrapper = ({ activeId, planetName, setActiveIndex }) => {
+	
 	const planetTabs = tabsData.map((tab, index) => {
 		const active = index === activeId ? planetName : "";
 		return (
