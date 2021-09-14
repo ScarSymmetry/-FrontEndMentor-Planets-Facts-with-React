@@ -1,6 +1,7 @@
 .buttonWrapper {
 	display: flex;
 	flex-direction: column;
+	counter-reset: padded;
 
 	max-width: 100%;
 }

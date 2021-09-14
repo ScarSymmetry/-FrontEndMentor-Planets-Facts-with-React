@@ -8,14 +8,25 @@
 	border: 1px solid var(--color-light-grey);
 	background: transparent;
 	text-transform: uppercase;
-
+	text-align: left;
 	letter-spacing: 2px;
 }
 
 .container {
+	max-width: 100%;
 	display: flex;
 
+	align-items: center;
 	padding-left: 2em;
+}
+
+.container::before {
+	content: counter(padded, decimal-leading-zero);
+	counter-increment: padded;
+	color: var(--color-light-grey);
+	font-weight: bold;
+	margin-right: 1rem;
+	font-size: 1.1em;
 }
 
 .mercury {
