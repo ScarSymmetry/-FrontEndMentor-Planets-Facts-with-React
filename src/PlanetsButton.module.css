@@ -5,7 +5,7 @@
 	padding: 1.1em;
 	width: 100%;
 	cursor: pointer;
-	border: 1px solid var(--color-light-grey);
+	border: 1px solid var(--color-dark-grey);
 	background: transparent;
 	text-transform: uppercase;
 	text-align: left;
@@ -18,15 +18,16 @@
 
 	align-items: center;
 	padding-left: 2em;
+	font-weight: bold;
 }
 
 .container::before {
 	content: counter(padded, decimal-leading-zero);
 	counter-increment: padded;
 	color: var(--color-light-grey);
-	font-weight: bold;
+	font-weight: lighter;
 	margin-right: 1rem;
-	font-size: 1.1em;
+	font-size: var(--fs-400);
 }
 
 .mercury {

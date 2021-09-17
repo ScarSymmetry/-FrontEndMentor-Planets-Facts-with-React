@@ -8,20 +8,16 @@
 	border-bottom: 1px solid var(--color-dark-grey);
 }
 
+.navbar__title {
+	font-family: var(--font-antonio);
+	font-size: var(--fs-800);
+	text-transform: uppercase;
+	color: var(--color-white);
+}
+
 @media only screen and (max-width: 1280px) {
 	.navbar {
 		flex-direction: column;
-		padding-inline: min(5vw,2em);
-		
+		padding-inline: min(5vw, 2em);
 	}
-
-	.navbar__title {
-		font-size: 1.8em;
-	}
-}
-
-.navbar__title {
-	font-family: var(--font-antonio);
-	text-transform: uppercase;
-	color: var(--color-white);
 }

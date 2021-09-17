@@ -11,7 +11,6 @@ import Main from "./componenets/Main/Main";
 const App = () => {
 	const initialData = data && data[2];
 	const [planet, setPlanet] = useState(initialData);
-
 	const [activeIndex, setActiveIndex] = useState(0);
 
 	const handlePlanetChange = (index) => {
