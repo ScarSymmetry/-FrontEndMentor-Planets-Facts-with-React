@@ -29,12 +29,13 @@
 	--font-antonio: "Antonio", sans-serif;
 
 	--fs-XXL: 5rem;
-	--fs-XL:2.5rem;
-	--fs-800:1.75rem;
+	--fs-XL: 2.5rem;
+	--fs-800: 1.75rem;
 	--fs-600: 1.5rem;
 	--fs-500: 1.25rem;
 	--fs-400: 1rem;
-	--fs-300: 0.7rem;
+	--fs-300: 0.75rem;
+	--fs-nav: 0.75rem;
 }
 
 body {
@@ -52,4 +53,16 @@ body {
 
 	margin: 0 auto;
 	padding: 0;
+}
+
+@media (max-width: 1280px) {
+	:root {
+		--fs-XXL: 2.5rem;
+		--fs-XL: 2rem;
+		--fs-800: 1.75rem;
+		--fs-600: 1.5rem;
+		--fs-500: 1.25rem;
+		--fs-400: 0.75rem;
+		--fs-300: 0.6rem;
+	}
 }

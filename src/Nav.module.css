@@ -7,7 +7,7 @@
 
 .nav li {
 	font-weight: bold;
-	font-size: var(--fs-300);
+	font-size: var(--fs-nav);
 	margin-inline: 5px;
 	position: relative;
 	cursor: pointer;
@@ -26,25 +26,13 @@
 	height: 3px;
 	width: 100%;
 	left: 0;
-	top: -22px;
+	top: -19px;
 	transform: scaleX(0);
 	transition: transform 0.2s ease-in-out;
 }
 
 .nav li:hover::after {
 	transform: scaleX(1);
-}
-
-@media only screen and (max-width: 1280px) {
-	.nav {
-		padding-block: 1em 1em;
-		width: 100%;
-		justify-content: space-between;
-	}
-
-	.nav li::after {
-		top: 49px;
-	}
 }
 
 .nav .active {
@@ -105,4 +93,16 @@
 }
 .neptune::after {
 	background-color: var(--color-neptune);
+}
+
+@media only screen and (max-width: 1280px) {
+	.nav {
+		padding-block: 1em 1em;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.nav li::after {
+		top: 49px;
+	}
 }

@@ -15,7 +15,7 @@
 .container {
 	max-width: 100%;
 	display: flex;
-
+	font-size: var(--fs-300);
 	align-items: center;
 	padding-left: 2em;
 	font-weight: bold;
@@ -27,7 +27,7 @@
 	color: var(--color-light-grey);
 	font-weight: lighter;
 	margin-right: 1rem;
-	font-size: var(--fs-400);
+	font-size: var(--fs-300);
 }
 
 .mercury {
