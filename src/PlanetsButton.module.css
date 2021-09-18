@@ -54,3 +54,12 @@
 .neptune {
 	background-color: var(--color-neptune);
 }
+
+@media only screen and (max-width: 768px) {
+	.container::before {
+		display: none;
+	}
+	.button {
+		flex: 1;
+	}
+}

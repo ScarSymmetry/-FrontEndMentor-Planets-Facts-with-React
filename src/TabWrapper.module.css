@@ -5,3 +5,9 @@
 
 	max-width: 100%;
 }
+@media only screen and (max-width: 768px) {
+	.buttonWrapper {
+		flex-direction: row;
+		justify-content: stretch;
+	}
+}

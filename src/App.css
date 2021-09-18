@@ -65,4 +65,14 @@ body {
 		--fs-400: 0.75rem;
 		--fs-300: 0.6rem;
 	}
+
+	.wrapper {
+		max-width: 85vw;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	:root {
+		--fs-XL: 1.5rem;
+	}
 }
