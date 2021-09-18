@@ -56,10 +56,19 @@
 }
 
 @media only screen and (max-width: 768px) {
+	.container {
+		padding: 0;
+	}
+
 	.container::before {
 		display: none;
 	}
 	.button {
-		flex: 1;
+		color: var(--color-light-grey);
+		text-align: center;
+	}
+	.button > span {
+		display: inline-block;
+		margin: 0 auto;
 	}
 }

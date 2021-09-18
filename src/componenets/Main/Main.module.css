@@ -151,6 +151,20 @@ a {
 	.planet {
 		grid-template-rows: 60px 1fr 200px;
 		row-gap: 10px;
+		margin-bottom: 2em;
+		padding-top: 0;
+	}
+
+	.planet * button {
+		margin: 0;
+		border-top: none;
+		border-inline: none;
+	}
+	.tab_container {
+		justify-self: stretch;
+		grid-column: 1 / -1;
+		grid-row: 1 / 2;
+		min-width: 0px;
 	}
 
 	.text_container {
@@ -159,17 +173,31 @@ a {
 		grid-row: 3 / 4;
 		text-align: center;
 	}
+
+	.planet__description {
+		padding-bottom: 0;
+		min-height: 160px;
+	}
+
 	.image_container {
 		grid-column: 1 / -1;
 		grid-row: 2 / 3;
+		min-height: 250px;
 	}
 	.image_container_secondary {
 		grid-column: 1 / -1;
 		grid-row: 2 / 3;
+		min-height: 250px;
 	}
-	.tab_container {
-		justify-self: stretch;
-		grid-column: 1 / -1;
-		grid-row: 1 / 2;
+
+	.planet__image {
+		max-width: 250px;
+	}
+	.image__primary {
+		max-width: 250px;
+	}
+	.image__secondary {
+		max-width: 100px;
+		height: auto;
 	}
 }
