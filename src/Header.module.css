@@ -15,6 +15,11 @@
 	color: var(--color-white);
 }
 
+.burger {
+	display: none;
+	margin-left: auto;
+}
+
 @media only screen and (max-width: 1280px) {
 	.navbar {
 		flex-direction: column;
@@ -25,8 +30,17 @@
 	.navbar {
 		flex-direction: row;
 		justify-content: start;
+		padding-inline: 0;
+		border-bottom: none;
 	}
+
 	.navbar__title {
-		margin-left: 28px;
+		z-index: 10000;
+	}
+
+	.burger {
+		display: block;
+
+		z-index: 10000;
 	}
 }
