@@ -38,6 +38,11 @@
 	--fs-nav: 0.75rem;
 }
 
+html,
+body {
+	overflow-x: hidden;
+	position: relative;
+}
 body {
 	font-size: var(--fs-400);
 	font-family: var(--font-spartan);
@@ -45,7 +50,8 @@ body {
 	background-image: url(./svg/background-stars.svg);
 	background-position: center;
 	background-repeat: no-repeat;
-	min-height: 100vh;
+	min-height: 100%;
+	max-width: 100%;
 }
 
 .wrapper {
@@ -74,5 +80,11 @@ body {
 @media only screen and (max-width: 960px) {
 	:root {
 		--fs-XL: 1.5rem;
+	}
+}
+
+@media (max-width: 840px) {
+	:root {
+		--fs-nav: 0.6rem;
 	}
 }
