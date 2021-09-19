@@ -30,28 +30,36 @@
 	font-size: var(--fs-300);
 }
 
-.mercury {
+.mercury,
+.mercury::after {
 	background-color: var(--color-mercury);
 }
-.venus {
+.venus,
+.venus::after {
 	background-color: var(--color-venus);
 }
-.earth {
+.earth,
+.earth::after {
 	background-color: var(--color-earth);
 }
-.mars {
+.mars,
+.mars::after {
 	background-color: var(--color-mars);
 }
-.jupiter {
+.jupiter,
+.jupiter::after {
 	background-color: var(--color-jupiter);
 }
-.saturn {
+.saturn,
+.saturn::after {
 	background-color: var(--color-saturn);
 }
-.uranus {
+.uranus,
+.uranus::after {
 	background-color: var(--color-uranus);
 }
-.neptune {
+.neptune,
+.neptune::after {
 	background-color: var(--color-neptune);
 }
 
@@ -63,12 +71,25 @@
 	.container::before {
 		display: none;
 	}
+
 	.button {
+		position: relative;
 		color: var(--color-light-grey);
+		background-color: transparent;
 		text-align: center;
 	}
 	.button > span {
 		display: inline-block;
 		margin: 0 auto;
+	}
+
+	.button::after {
+		content: "";
+		position: absolute;
+
+		height: 2px;
+		width: 100%;
+		bottom: -3px;
+		left: 0;
 	}
 }

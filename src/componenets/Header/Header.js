@@ -1,6 +1,7 @@
 import Nav from "./Nav";
 import styles from "./Header.module.css";
-import burger from "./svg/icon-hamburger.svg";
+import burger from "../../svg/icon-hamburger.svg";
+
 const Header = ({ data, changePlanet, activePlanet }) => {
 	return (
 		<div className="wrapper">

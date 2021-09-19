@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
 import data from "./data.json";
-import PlanetDetails from "./PlanetDetails";
+import PlanetDetails from "./componenets/Footer/PlanetDetails";
 
 import "./App.css";
 import arrow from "./svg/icon-source.svg";
-import Header from "./Header";
+import Header from "./componenets/Header/Header";
 import Main from "./componenets/Main/Main";
 
 const App = () => {
@@ -16,8 +16,6 @@ const App = () => {
 	const handlePlanetChange = (index) => {
 		setPlanet(data[index]);
 	};
-
-	
 
 	const shit = Object.keys(planet.images)[activeIndex];
 

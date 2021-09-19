@@ -1,5 +1,5 @@
 import styles from "./Main.module.css";
-import TabWrapper from "../../TabWrapper";
+import TabWrapper from "../Main/TabWrapper";
 
 const Main = ({
 	planetTitle,

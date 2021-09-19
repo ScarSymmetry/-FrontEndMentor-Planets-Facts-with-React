@@ -127,7 +127,7 @@
 		left: 0;
 		top: 0;
 		background-color: var(--color-black);
-		transform: translateX(110%);
+		transform: translateX(100%);
 
 		transition: transform 1s ease-in-out;
 	}
