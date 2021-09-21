@@ -21,15 +21,19 @@ const App = () => {
 		toggleMenu(false);
 	};
 
-	const shit = Object.keys(planet.images)[activeIndex];
+	const computedValues = Object.keys(planet.images)[activeIndex];
 
-	const [description, wikiLink] = Object.values(planet[shit]);
+	const [description, wikiLink] = Object.values(planet[computedValues]);
 
 	//not sure if this is even a sideeffect.i guess its not ,so i could just put it in the handlePlanetChange function?
 	//this resets active tab when you change planet in the navbar
 	useEffect(() => {
 		setActiveIndex(0);
 	}, [planet]);
+
+	menu
+		? (document.body.style.overflow = "hidden")
+		: (document.body.style.overflow = "auto");
 
 	return (
 		<>
