@@ -48,7 +48,7 @@ const Main = ({
 					<a href={wikiLink} target="_blank" rel="noreferrer">
 						Wikipedia
 					</a>
-					<img src={arrow} alt="wikipedia link" />
+					<img className={styles.arrow} src={arrow} alt="wikipedia link" />
 				</p>
 			</div>
 

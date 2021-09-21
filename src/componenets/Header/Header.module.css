@@ -30,17 +30,20 @@
 	.navbar {
 		flex-direction: row;
 		justify-content: start;
-		padding-inline: 0;
+		min-height: 70px;
 		border-bottom: none;
+
+		padding: 0;
+	}
+	.burger {
+		position: absolute;
+		z-index: 15000;
+		right: 8vw;
+		display: block;
 	}
 
 	.navbar__title {
-		z-index: 10000;
-	}
-
-	.burger {
-		display: block;
-
-		z-index: 10000;
+		position: absolute;
+		z-index: 15000;
 	}
 }

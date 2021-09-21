@@ -2,7 +2,13 @@ import Nav from "./Nav";
 import styles from "./Header.module.css";
 import burger from "../../svg/icon-hamburger.svg";
 
-const Header = ({ data, changePlanet, activePlanet }) => {
+const Header = ({
+	data,
+	changePlanet,
+	activePlanet,
+	menuState,
+	setMenuState,
+}) => {
 	return (
 		<div className="wrapper">
 			<div className={styles.navbar}>
@@ -11,8 +17,14 @@ const Header = ({ data, changePlanet, activePlanet }) => {
 					changePlanet={changePlanet}
 					data={data}
 					activePlanet={activePlanet}
+					menuState={menuState}
 				/>
-				<img className={styles.burger} src={burger} alt="menu" />
+				<img
+					onClick={() => setMenuState()}
+					className={styles.burger}
+					src={burger}
+					alt="menu"
+				/>
 			</div>
 		</div>
 	);
