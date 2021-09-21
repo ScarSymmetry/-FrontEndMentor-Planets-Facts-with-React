@@ -31,9 +31,7 @@ const App = () => {
 		setActiveIndex(0);
 	}, [planet]);
 
-	menu
-		? (document.body.style.overflow = "hidden")
-		: (document.body.style.overflow = "auto");
+	
 
 	return (
 		<>
