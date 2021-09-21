@@ -6,7 +6,7 @@
 	justify-items: center;
 	grid-template-columns: 1fr minmax(200px, 380px);
 	grid-template-rows: 1fr minmax(200px, 300px);
-	row-gap: 35px;
+	row-gap: 25px;
 }
 
 .text_container {
@@ -98,7 +98,7 @@ a {
 
 @media only screen and (max-width: 1280px) {
 	.planet {
-		padding-top: 5em;
+		padding-top: 3em;
 	}
 
 	.planet__description {

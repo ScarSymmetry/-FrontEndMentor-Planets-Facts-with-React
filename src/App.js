@@ -18,6 +18,7 @@ const App = () => {
 
 	const handlePlanetChange = (index) => {
 		setPlanet(data[index]);
+		toggleMenu(false);
 	};
 
 	const shit = Object.keys(planet.images)[activeIndex];

@@ -1,11 +1,19 @@
 .navbar {
 	display: flex;
-
+	min-height: 80px;
 	max-width: 100%;
 	justify-content: space-between;
 	align-items: center;
-	padding-inline: min(10vw, 5em);
-	border-bottom: 1px solid var(--color-dark-grey);
+}
+
+.navbar::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: var(--color-dark-grey);
+	top: 80px;
+	left: 0;
 }
 
 .navbar__title {
@@ -23,7 +31,11 @@
 @media only screen and (max-width: 1280px) {
 	.navbar {
 		flex-direction: column;
-		padding-inline: min(5vw, 2em);
+		padding-top: 1em;
+	}
+
+	.navbar::after {
+		top: 102px;
 	}
 }
 @media only screen and (max-width: 768px) {
@@ -35,10 +47,14 @@
 
 		padding: 0;
 	}
+
+	.navbar::after {
+		display: none;
+	}
 	.burger {
 		position: absolute;
 		z-index: 15000;
-		right: 8vw;
+		right: 5vw;
 		display: block;
 	}
 
