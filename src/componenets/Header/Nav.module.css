@@ -41,36 +41,11 @@
 
 .nav .active {
 	color: var(--color-white);
-}
-
-/* active states */
-.nav .mercury_active::after {
 	transform: scaleX(1);
 }
-
-.nav .venus_active::after {
+.nav > li.active_tab::after {
 	transform: scaleX(1);
 }
-.nav .earth_active::after {
-	transform: scaleX(1);
-}
-.nav .mars_active::after {
-	transform: scaleX(1);
-}
-.nav .jupiter_active::after {
-	transform: scaleX(1);
-}
-.nav .saturn_active::after {
-	transform: scaleX(1);
-}
-.nav .uranus_active::after {
-	transform: scaleX(1);
-}
-.nav .neptune_active::after {
-	transform: scaleX(1);
-}
-
-/* active states end */
 
 .mercury::after,
 .mercury::before {

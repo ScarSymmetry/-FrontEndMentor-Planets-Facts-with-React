@@ -7,9 +7,9 @@ const Nav = ({ data, changePlanet, activePlanet, menuState }) => {
 	const planetNames = data.map((planet, index) => {
 		const activeTabStyle =
 			planet.name.toLowerCase() === activePlanet.toLowerCase()
-				? `${activePlanet.toLowerCase()}_active`
+				? `active_tab`
 				: "";
-
+		console.log(activeTabStyle);
 		return (
 			<li
 				key={index}
