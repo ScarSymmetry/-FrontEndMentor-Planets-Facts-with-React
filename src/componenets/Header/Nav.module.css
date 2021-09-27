@@ -105,7 +105,7 @@ li.active_pseudo::after {
 		min-height: 100%;
 		left: 0;
 		top: 0;
-		background-color: rgba(255, 0, 0, 0.5);
+		background-color: var(--color-black);
 		transform: translateX(110%);
 		overflow: auto;
 
@@ -129,9 +129,9 @@ li.active_pseudo::after {
 		justify-content: space-between;
 		align-items: center;
 		position: relative;
+		min-height: 60px;
 	}
 	.nav li > span {
-		min-height: 60px;
 		padding-left: 50px;
 	}
 	.nav li:not(:last-child) {
@@ -154,6 +154,6 @@ li.active_pseudo::after {
 		height: 20px;
 		width: 20px;
 		left: 2em;
-		top: 41px;
+		top: 18px;
 	}
 }

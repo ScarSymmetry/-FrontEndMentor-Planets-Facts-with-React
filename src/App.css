@@ -43,6 +43,8 @@ body {
 	position: relative; */
 }
 
+/* there were problems with the slideout menu still being able to be dragged in with mobile modes */
+
 body {
 	font-size: var(--fs-400);
 	font-family: var(--font-spartan);
