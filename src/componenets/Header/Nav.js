@@ -1,15 +1,16 @@
 import style from "./Nav.module.css";
 import chevron from "../../svg/icon-chevron.svg";
 
+
 const Nav = ({ data, changePlanet, activePlanet, menuState }) => {
 	let burgerOpen = menuState ? style.isOpen : "";
 
 	const planetNames = data.map((planet, index) => {
 		const activeTabStyle =
 			planet.name.toLowerCase() === activePlanet.toLowerCase()
-				? `active_tab`
+				? `active_pseudo`
 				: "";
-		console.log(activeTabStyle);
+
 		return (
 			<li
 				key={index}

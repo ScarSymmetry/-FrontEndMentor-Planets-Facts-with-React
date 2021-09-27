@@ -52,14 +52,14 @@
 		display: none;
 	}
 	.burger {
-		position: absolute;
+		position: fixed;
 		z-index: 15000;
 		right: 5vw;
 		display: block;
 	}
 
 	.navbar__title {
-		position: absolute;
+		position: fixed;
 		z-index: 15000;
 	}
 }
