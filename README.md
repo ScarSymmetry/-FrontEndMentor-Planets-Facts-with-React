@@ -30,7 +30,7 @@ Users should be able to:
 
 
 
-- Live Site URL: [Add live site URL here](https://react-planets-facts.vercel.app)
+- Live Site URL: [Link to deployed site on Vercel](https://react-planets-facts.vercel.app)
 
 ## My process
 
